@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-title class="title">
+    {{gene.desc}}
+  </mat-card-title>
+  <mat-card-subtitle>
+   {{gene.id}}
+  </mat-card-subtitle>
+  <mat-card-content class="marginTop">
+      Type : <h4>{{gene.type}}</h4><br>
+      Sommaire : <h5>{{gene.summary}}</h5>
+  </mat-card-content>
+</mat-card>
+
+<br>
+
+<mat-card *ngFor="let word of wordArray">
+  <mat-card-title class="title">
+    {{word.word}}
+  </mat-card-title>
+  <mat-card-subtitle>
+   {{word.value}}
+  </mat-card-subtitle>
+</mat-card>

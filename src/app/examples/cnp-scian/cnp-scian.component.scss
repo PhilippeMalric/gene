@@ -1,0 +1,92 @@
+@import '../../../styles-variables';
+
+.highlight{
+  background-color: deepskyblue;
+}
+
+.not-highlight{
+  background-color: white;
+}
+
+.font20{
+  font-size: 20px;
+  width: fit-content;
+  margin: auto;
+}
+
+/deep/ mat-card{
+  flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  display:grid;
+  width: max-content;
+  max-width: 800px;
+}
+
+
+/deep/ .mat-card-subtitle{
+  display: inline-block !important;
+  float: right;
+  margin: 10px;
+
+}
+
+
+/deep/ .mat-card-title{
+  display: contents !important;
+  margin-bottom: 15px;
+
+
+}
+
+.title{
+  max-width: 500px;
+}
+
+.paddingB{
+  padding-bottom: 10px;
+}
+
+button{
+  white-space: pre-wrap !important;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.center{
+  width: fit-content;
+  margin: auto;
+}
+
+.marginBottomTop{
+  margin-bottom: 10px;
+  margin-top:10px
+}
+
+.marginTop{
+
+  margin-top:20px
+}
+
+
+@media (max-width: map-get($grid-breakpoints, lg)) {
+  .center{
+    width: 100%;
+    margin: 0px;
+  }
+
+  /deep/ mat-card{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+  /deep/ mat-card::-webkit-scrollbar {
+    display: none;
+  }
+}

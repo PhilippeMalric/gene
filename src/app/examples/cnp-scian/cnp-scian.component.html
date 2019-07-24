@@ -1,0 +1,42 @@
+
+<h1 class="center">Liste de toutes les professions selon les codes CNP</h1>
+<div class="center">
+    <mat-form-field >
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+</div>
+
+<mat-paginator id="top" class="font20" [pageSizeOptions]="[1, 5, 10]" showFirstLastButtons></mat-paginator>
+<div  class="mat-elevation-z8 center">
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8 paddingB" matSort>
+
+        <ng-container matColumnDef="card">
+            <td mat-cell *matCellDef="let e"> <div class="center minw">
+
+            <mat-card
+            [ngClass]="{routeAnimationsElements:true, 'highlight' : e.selected, 'not-highlight' : !e.selected}"
+            (click)=select(e)>
+              <mat-card-title class="title">
+                {{e.desc}}
+              </mat-card-title>
+              <mat-card-subtitle>
+                Code CNP : {{e.id}}
+              </mat-card-subtitle>
+              <mat-card-content class="marginTop">
+                 <button *ngFor="let desc of e.scianDescTab" mat-raised-button [routerLink]="[ '/examples/cnp-scian',desc.scian]">{{desc.desc}}</button>
+
+              </mat-card-content>
+            </mat-card>
+          </div> </td>
+        </ng-container>
+
+
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </mat-table>
+</div>
+
+<hr>
+
+<div class="center marginBottomTop">
+    <button class="center" mat-raised-button color="warn" (click)="top()">Aller en haut de la page</button>
+</div>
