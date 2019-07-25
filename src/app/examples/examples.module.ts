@@ -42,6 +42,7 @@ import { VoteReviewComponent } from './vote-review/vote-review.component';
 import { GeneComponent } from './gene/gene.component';
 import { GeneDetailsComponent } from './gene-details/gene-details.component';
 import { GeneService } from './gene.service';
+import { RnaComponent } from './rna/rna.component';
 
 @NgModule({
   imports: [
@@ -88,7 +89,8 @@ import { GeneService } from './gene.service';
     CnpScianComponent,
     ScianJobsComponent,
     VotesComponent,
-    VoteReviewComponent
+    VoteReviewComponent,
+    RnaComponent
   ],
   providers: [StockMarketService,FetchService,D3Service,GeneService]
 })
