@@ -70,6 +70,8 @@ retrieveGeneDetails(id){
           let g = new Gene(id,type,desc,summary)
           g.printToConsole()
           this.gene = g
+
+          console.log(text)
         }
         else{
           console.log("error")
