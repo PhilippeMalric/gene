@@ -18,6 +18,7 @@ import { ScianJobsComponent } from './scian-jobs/scian-jobs.component';
 import { VotesComponent } from './votes/votes.component';
 import { GeneComponent } from './gene/gene.component';
 import { GeneDetailsComponent } from './gene-details/gene-details.component';
+import { RnaComponent } from './rna/rna.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,11 @@ const routes: Routes = [
         path: 'gene',
         component: GeneComponent,
         data: { title: 'gene' }
+      },
+      {
+        path: 'rna',
+        component: RnaComponent,
+        data: { title: 'rna' }
       }
 
     ]

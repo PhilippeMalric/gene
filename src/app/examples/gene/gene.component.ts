@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GeneComponent implements OnInit {
-  humanGeneIDs: any[];
+  humanGeneIDs: any[]=[];
   nSearch: number;
   geneDict:Object;
   gene: Gene;
@@ -21,9 +21,9 @@ export class GeneComponent implements OnInit {
 
   ngOnInit() {
 
-    this.retrieveGene()
-
   }
+
+
   retrieveGene(){
     this.humanGeneIDs = [] ;
     this.nSearch = 0 ;
@@ -45,7 +45,7 @@ export class GeneComponent implements OnInit {
   }
 
 
-
+//https://rnacentral.org/api/v1/rna/?min_length=50&max_length=100&format=json
 retrieveGeneDetails(id){
     this.geneService.retrieveGeneDetails(id).pipe(
 

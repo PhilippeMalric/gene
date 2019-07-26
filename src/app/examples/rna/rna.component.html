@@ -1,3 +1,9 @@
-<p>
-  rna works!
-</p>
+<h1>Bienvenue sur la liste de ARN</h1>
+<button mat-button (click)="getRNA()">Load</button>
+
+<mat-chip-list *ngIf="rnaIDs.length > 0" aria-label="RNA">
+  
+  <mat-chip *ngFor="let rnaId of rnaIDs;let i = index" (click)="log(rnaIDs[i].sequence)">{{rnaIDs[i].description}}</mat-chip>
+
+  </mat-chip-list>
+<iframe [src]="url"  height="650px" width="100%"  seamless='seamless' frameBorder="0" AllowFullScreen></iframe>

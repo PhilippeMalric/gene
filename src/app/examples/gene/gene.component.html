@@ -1,5 +1,5 @@
 <h1>Bienvenue sur la liste de genes</h1>
-
+<button mat-button (click)="retrieveGene()">Load</button>
 <mat-chip-list *ngIf="humanGeneIDs.length > 0" aria-label="Gene Id">
   <mat-chip *ngFor="let geneId of humanGeneIDs" (click)="retrieveGeneDetails(geneId)">{{geneId}}</mat-chip>
 </mat-chip-list>

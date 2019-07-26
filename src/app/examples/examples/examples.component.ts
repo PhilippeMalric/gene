@@ -39,6 +39,7 @@ export class ExamplesComponent implements OnInit {
   links: Link[] = myData.links
   examples = [
     { link: 'gene', label: 'gene' },
+    { link: 'rna', label: 'rna' },
 
   ];
 /*
