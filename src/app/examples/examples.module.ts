@@ -43,6 +43,7 @@ import { GeneComponent } from './gene/gene.component';
 import { GeneDetailsComponent } from './gene-details/gene-details.component';
 import { GeneService } from './gene.service';
 import { RnaComponent } from './rna/rna.component';
+import { ArrayExpressExpComponent } from './array-express-exp/array-express-exp.component';
 
 @NgModule({
   imports: [
@@ -90,7 +91,8 @@ import { RnaComponent } from './rna/rna.component';
     ScianJobsComponent,
     VotesComponent,
     VoteReviewComponent,
-    RnaComponent
+    RnaComponent,
+    ArrayExpressExpComponent
   ],
   providers: [StockMarketService,FetchService,D3Service,GeneService]
 })
