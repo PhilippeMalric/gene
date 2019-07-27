@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Link } from '../../d3';
 import { Node } from '../../d3';
 
+
+
 @Injectable()
 export class DataService {
 
@@ -11,8 +13,12 @@ export class DataService {
   scian:any
   cnp:any
   cnpToScian:any
+  expRNAc:any
 
-  constructor() { }
+  constructor() { 
+
+
+  }
 
 
 

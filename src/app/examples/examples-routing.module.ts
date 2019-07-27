@@ -19,6 +19,7 @@ import { VotesComponent } from './votes/votes.component';
 import { GeneComponent } from './gene/gene.component';
 import { GeneDetailsComponent } from './gene-details/gene-details.component';
 import { RnaComponent } from './rna/rna.component';
+import { ArrayExpressExpComponent } from './array-express-exp/array-express-exp.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,11 @@ const routes: Routes = [
         path: 'rna',
         component: RnaComponent,
         data: { title: 'rna' }
+      },
+      {
+        path: 'arrayEpress',
+        component: ArrayExpressExpComponent,
+        data: { title: 'rnarrayEpressa' }
       }
 
     ]

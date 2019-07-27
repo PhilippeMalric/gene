@@ -40,7 +40,8 @@ export class ExamplesComponent implements OnInit {
   examples = [
     { link: 'gene', label: 'gene' },
     { link: 'rna', label: 'rna' },
-
+    { link: 'arrayEpress', label: 'arrayEpress' },
+    
   ];
 /*
   examples = [{ link: 'crud2', label: 'anms.examples.menu.crud2' }];
@@ -54,6 +55,8 @@ export class ExamplesComponent implements OnInit {
     this.dataS.cnp = this.cnp.slice(25);
     this.dataS.scian = this.scian;
     this.dataS.cnpToScian = this.cnpToScian;
+
+    
 
   }
 

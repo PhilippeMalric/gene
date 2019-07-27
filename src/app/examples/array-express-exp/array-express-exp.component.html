@@ -1,2 +1,8 @@
 <h1>Bienvenue sur la liste de genes</h1>
 <button mat-button (click)="click()">Load</button>
+<button mat-button (click)="click3()">Load2</button>
+
+
+<mat-chip-list *ngIf="experiments.length > 0" aria-label="ArrayExp">
+    <mat-chip *ngFor="let exp of experiments;let i = index" (click)="click2(experiments[i].accession)">{{experiments[i].name}}</mat-chip>
+</mat-chip-list>
